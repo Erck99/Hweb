@@ -8,24 +8,30 @@
 <body>
 
     
-    <!-- EJERCICIO 1: RECETA DE GUACAMOLE -->
-    
+    <!-- EJERCICIO 1 -->
+
+    <!-- CAMBIO: Se utilizó article porque la receta puede entenderse
+     y distribuirse de forma independiente del resto del contenido -->
+
 
     <article>
 
-        <!-- Encabezado principal de la receta -->
+        <!-- Encabezado principal -->
         <header>
             <h1>Guacamole (clásico)</h1>
         </header>
 
-        <!-- Cita destacada del texto -->
+        <!-- Cita destacada -->
+         <!-- CAMBIO: Se reemplazó un párrafo común por blockquote
+     porque corresponde a una cita textual destacada -->
+
         <blockquote>
             "Existe un condimento que no puede faltar en toda mesa mexicana.
             Algunos lo consideran una salsa, otros un aderezo, algunos incluso
             le llaman ensalada, otros simplemente le llaman por su nombre propio:
             Guacamole."
         </blockquote>
-
+ 
         <!-- Párrafo descriptivo -->
         <p>
             Aunque el guacamole se prepara de diferentes formas según la zona de
@@ -35,11 +41,17 @@
         </p>
 
         <!-- Sección de ingredientes -->
+         <!-- CAMBIO: Se utilizó section para agrupar ingredientes
+     e instrucciones por temática -->
+
         <section>
 
             <h2>Ingredientes</h2>
 
             <!-- Lista desordenada -->
+             <!-- CAMBIO: Los ingredientes se organizaron mediante ul
+     porque el orden no altera el resultado -->
+
             <ul>
                 <li>4 o 5 aguacates maduros</li>
                 <li>1 cebolla mediana (normal)</li>
@@ -58,6 +70,9 @@
             <h2>Instrucciones</h2>
 
             <!-- Lista ordenada -->
+             <!-- CAMBIO: Las instrucciones se organizaron mediante ol
+     porque deben seguirse en secuencia -->
+
             <ol>
                 <li>Lavar bien el tomate y el manojo de cilantro.</li>
                 <li>Pelar la cebolla y quitarle la capa exterior.</li>
@@ -73,36 +88,7 @@
 
         </section>
 
-        <!-- Lista descriptiva -->
-        <section>
-
-            <h2>Conceptos</h2>
-
-            <dl>
-                <dt>Guacamole</dt>
-                <dd>Salsa tradicional mexicana preparada a base de aguacate.</dd>
-
-                <dt>Molcajete</dt>
-                <dd>Utensilio de piedra utilizado para moler ingredientes.</dd>
-            </dl>
-
-        </section>
-
-        <!-- Figura -->
-        <figure>
-            
-            <figcaption>
-                Guacamole preparado siguiendo la receta tradicional.
-            </figcaption>
-        </figure>
-
-        <!-- Texto preformateado -->
-        <pre>
-Tiempo de preparación: 15 minutos
-Porciones: 4 personas
-Nivel de dificultad: Fácil
-        </pre>
-
+        <!-- Párrafo final -->
         <p>
             En caso de no contar con un molcajete, se puede utilizar un tenedor
             procurando que la pulpa del aguacate se mezcle con los demás
@@ -115,78 +101,91 @@ Nivel de dificultad: Fácil
 
     <hr>
 
+
+    <!-- EJERCICIO 2 -->
     
-    <!-- EJERCICIO 2: BAJITO Y DESPACITO -->
-   
 
     <article>
-
+        <!-- CAMBIO: La imagen se agrupó con su descripción
+     mediante figure  -->
+ <figure>
+            <img src="img/guacamole.jpg" alt="Platillo de guacamole">
+            <figcaption>
+                Guacamole preparado siguiendo la receta tradicional.
+            </figcaption>
         <header>
 
-            <!-- b = texto destacado -->
-            <!-- time = fecha procesable por máquinas -->
+            <!-- b = resalta texto -->
+            <!-- time = fecha legible por máquinas -->
 
             <p>
                 Publicado por <b>MasterChef</b>,
-                <time datetime="2018-11-15">
-                    November 15, 2018
-                </time>
+                <time datetime="2018-11-15">November 15, 2018</time> <!-- CAMBIO: Se utilizó time para representar la fecha
+     de forma interpretable por navegadores y buscadores -->
+
             </p>
 
+        </figure>
         </header>
 
         <h2>Bajito y Despacito</h2>
 
         <p>
             Esta semana estamos
+            <!-- em = énfasis -->
             <em>extremadamente</em>
+
             emocionados por presentar una nueva técnica de cocina llamada
 
-            <dfn><i>sous vide</i></dfn>.
+            <!-- término definido y extranjero -->
+            <!-- CAMBIO: Se utilizó dfn para indicar que "sous vide"
+     es un término técnico definido dentro del artículo -->
+<dfn><i>sous vide</i></dfn>
 
-            Con la técnica
-            <dfn><i>sous vide</i></dfn>,
-            tú sumerges un recipiente (generalmente de plástico sellado al vacío)
-            en un baño de agua que precisamente se adapta a la temperatura
-            requerida para que la comida sea cocinada.
+            Con la técnica <dfn><i>sous vide</i></dfn>, tú sumerges un
+            recipiente (generalmente de plástico sellado al vacío) en un baño
+            de agua que precisamente se adapta a la temperatura requerida para
+            que la comida sea cocinada.
 
             En este programa,
+
+            <!-- cite = nombre de obra/publicación -->
+
+            <!-- CAMBIO: Se utilizó cite para identificar el nombre
+     de la publicación "Cocina para Geeks" -->
+
             <cite>Cocina para Geeks</cite>,
+
             Jaime Potter describe la técnica como
+
+            <!-- q = cita corta -->
             <q>poción mágica a temperatura ultra baja</q>.
         </p>
 
         <p>
-            La siguiente semana, prepararemos
+            La siguiente semana prepararemos
+
+            <!-- i = término especial -->
             <i>Salmon Sous Vide con Eneldo Holandés</i>.
+
             Para asistir al programa, contáctanos antes del 30 de Noviembre.
         </p>
 
         <p>
             registro@masterchef.com
+            <!-- br = salto de línea -->
             <br>
             552-336-1800
         </p>
 
         <p>
+            <!-- small = nota o advertencia -->
             <small>
                 Advertencia: El salmón cocinado a la Sous vide no está
                 pasteurizado. Evítalo si se está embarazada o se tiene
                 problemas de alergia e inmunidad.
             </small>
         </p>
-
-        <!--
-            b      : texto destacado visualmente
-            br     : salto de línea
-            cite   : referencia a una publicación u obra
-            dfn    : término que se está definiendo
-            em     : énfasis semántico
-            i      : término técnico o extranjero
-            q      : cita corta en línea
-            small  : información secundaria o advertencia
-            time   : fecha legible para navegadores y buscadores
-        -->
 
     </article>
 
